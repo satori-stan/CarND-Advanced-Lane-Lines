@@ -131,7 +131,7 @@ In the main method of the Line class, the last step in finding a line is to calc
 
 For the radius of the curvature, the first and second coefficients are used as part of the first and second derivative of the curve required for the calculation.
 
-For the distance to the center, with the y coordinate of the point closest to the car, the x coordinate value is calculated with the quadratic formula (which is the type of function we are fitting the points to). Once the value of the x coordinate in meters is known, the absolute value of the subtraction of the x coordinate and the central position of the image (also in meters) is used.
+For the distance to the center, with the y coordinate of the point closest to the car, the x coordinate value is calculated with the quadratic formula (which is the type of function we are fitting the points to). Once the value of the x coordinate in meters is known, the absolute value of the subtraction of the x coordinate and the central position of the image (also in meters) is used. This provides the distance from the line to the center of the car. Adding both left and right distances should yield the lane width. The distance of the car to the center of the lane would then be the distance of a single (left) line to the car minus half the width of the lane.
 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
